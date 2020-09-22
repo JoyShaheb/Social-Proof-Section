@@ -5,8 +5,10 @@ import { Bottom, Top } from "./components/Index";
 const App = () => {
   return (
     <div className="App">
-      <Top />
-      <Bottom />
+      <div className="container">
+        <Top />
+        <Bottom />
+      </div>
     </div>
   );
 };
