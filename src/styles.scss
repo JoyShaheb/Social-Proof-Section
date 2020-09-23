@@ -1,15 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+// I finally solved the background-image source linking problem by moving the images folder to public folder,... 
+//Here is the original post https://stackoverflow.com/questions/59464712/backgroundimage-path-for-css-from-public-folder-not-working-after-build-in-react
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700;800;900&display=swap');
 *{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   body{
-    font-family: 'Poppins';
+    font-family: 'Spartan';
     width:100%;
     min-height: 100vh;
+    font-size: 15px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('./images/bg-pattern-top-desktop.svg') no-repeat left top, url('./images/bg-pattern-bottom-desktop.svg') no-repeat right bottom;
+    // background-repeat: no-repeat, no-repeat;
+    // background-position: top left, bottom right;
   }
 }
-img{
-  width: 50px;
-  height: 50px;
+
+
+
+@media (max-width:375px){
+  body{
+  background: url('./images/bg-pattern-top-mobile.svg') no-repeat left top, url('./images/bg-pattern-bottom-mobile.svg') no-repeat right bottom;
+  }
 }

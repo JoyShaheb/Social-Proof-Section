@@ -1,10 +1,10 @@
 import React from "react";
+import stars from "../../public/images/icon-star.svg";
 const Top = () => {
-  //  Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
-  const star = `https://i.ibb.co/mFQ9PX3/star.png`;
+  const star = stars;
   const Rating = (num) => {
-    return [...Array.from({ length: num }, (_, b) => b)].map((xx) => (
-      <img src={star} alt="" />
+    return [...Array.from({ length: num }, (_, b) => b)].map((xx, key) => (
+      <img key={key} src={star} alt="" />
     ));
   };
   return (

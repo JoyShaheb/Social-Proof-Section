@@ -1,14 +1,17 @@
 import React from "react";
+import anne from "../../public/images/image-anne.jpg";
+import colton from "../../public/images/image-colton.jpg";
+import irene from "../../public/images/image-irene.jpg";
 const Bottom = () => {
   return (
     <div className="">
       <div className="card-1">
         <div className="card-top">
-          <img src="" alt="" />
+          <img src={colton} alt="" />
         </div>
         <div className="card-info">
-          <p class="card-name">Colton Smith</p>
-          <p class="card-position">Verified Buyer</p>
+          <p className="card-name">Colton Smith</p>
+          <p className="card-position">Verified Buyer</p>
         </div>
         <div className="card-bottom">
           "We needed the same printed design as the one we had ordered a week
@@ -18,11 +21,11 @@ const Bottom = () => {
       </div>
       <div className="card-2">
         <div className="card-top">
-          <img src="" alt="" />
+          <img src={irene} alt="" />
         </div>
         <div className="card-info">
-          <p class="card-name">Irene Roberts</p>
-          <p class="card-position">Verified Buyer</p>
+          <p className="card-name">Irene Roberts</p>
+          <p className="card-position">Verified Buyer</p>
         </div>
         <div className="card-bottom">
           "Customer service is always excellent and very quick turn around.
@@ -32,11 +35,11 @@ const Bottom = () => {
       </div>
       <div className="card-3">
         <div className="card-top">
-          <img src="" alt="" />
+          <img src={anne} alt="" />
         </div>
         <div className="card-info">
-          <p class="card-name">Anne Wallace</p>
-          <p class="card-position">Verified Buyer</p>
+          <p className="card-name">Anne Wallace</p>
+          <p className="card-position">Verified Buyer</p>
         </div>
         <div className="card-bottom">
           "Put an order with this company and can only praise them for the very
