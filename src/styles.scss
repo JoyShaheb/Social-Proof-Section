@@ -21,12 +21,12 @@ $White: hsl(0, 0%, 100%);
     place-items:center;
 }
 }
-
-
 .top{
   display: flex;
   //Change later=======
-  margin-bottom: 100px;
+  margin-bottom: 60px;
+
+
   .left{
     color: $Dark_Grayish_Magenta;
     h2{
@@ -41,11 +41,11 @@ $White: hsl(0, 0%, 100%);
     display: flex;
     flex-direction: column;
 
+
     [class ^='review-']{
       display: flex;
       background-color: $Light_Grayish_Magenta;
       margin-bottom: 12px;
-      width: 55%;
       padding: 15px;
       border-radius: 5px;
       .star{}
@@ -56,21 +56,55 @@ $White: hsl(0, 0%, 100%);
     }
   }
 }
-.bottom{}
+
+
+
+.bottom{
+  display: flex;
+  [class ^='CARD-']{
+    background-color: $Very_Dark_Magenta;
+    color: $White;
+    border-radius: 10px;
+    padding: 20px;
+
+    .card-block{
+      display: flex;
+      img{
+        border-radius: 50%;
+      }
+      .card-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 30px;
+        .card-name{
+          font-weight: 700;
+        }
+        .card-status{
+          color: $Soft_Pink;
+        }
+      }
+    }
+
+
+    .card-text{
+      margin: 20px 0;
+    }
+  }
+}
 
 
 
 
 
 // change media query later. now doing testing..
-@media (min-width:700px){
+@media (min-width:823px){
 body{
   background: url('./images/bg-pattern-top-desktop.svg') no-repeat left top, url('./images/bg-pattern-bottom-desktop.svg') no-repeat right bottom;
   padding: 90px;
 } 
 .top{
   flex-direction: row;
-
   .left{
     width: 30%;
     
@@ -85,6 +119,7 @@ body{
 
     [class ^='review-']{
       flex-direction: row;
+      width: 65%;
       .star{}
       .text{
         margin: 0 10px;
@@ -98,12 +133,28 @@ body{
     }
   }
 }
-.bottom{}
+
+
+
+.bottom{
+  flex-direction: row;
+  [class ^='CARD-']{
+  }
+  .CARD-1{
+    margin: 0 10px 140px 0;
+  }
+  .CARD-2{
+    margin: 20px 10px 120px 0;    
+  }
+  .CARD-3{
+    margin: 40px 0 100px 0;    
+  }
+}
 
 }
 
 
-@media (max-width:699px){
+@media (max-width:822px){
 body{
   background: url('./images/bg-pattern-top-mobile.svg') no-repeat left top, url('./images/bg-pattern-bottom-mobile.svg') no-repeat right bottom;
   padding: 60px 20px;
@@ -141,6 +192,15 @@ body{
     }
   }
 }
-.bottom{}
+
+
+
+.bottom{
+  flex-direction: column;
+  [class ^='CARD-']{
+    margin-bottom: 10px;
+  }
+}
+
 
 }
