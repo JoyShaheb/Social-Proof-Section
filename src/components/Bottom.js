@@ -4,7 +4,7 @@ import colton from "../../public/images/image-colton.jpg";
 import irene from "../../public/images/image-irene.jpg";
 const Bottom = () => {
   return (
-    <div className="">
+    <div className="bottom">
       <div className="card-1">
         <div className="card-top">
           <img src={colton} alt="" />

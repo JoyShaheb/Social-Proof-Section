@@ -4,11 +4,9 @@ import { Bottom, Top } from "./components/Index";
 
 const App = () => {
   return (
-    <div className="App">
-      <div className="container">
-        <Top />
-        <Bottom />
-      </div>
+    <div className="container">
+      <Top />
+      <Bottom />
     </div>
   );
 };

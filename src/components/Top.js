@@ -8,7 +8,7 @@ const Top = () => {
     ));
   };
   return (
-    <div className="">
+    <div className="top">
       <div className="left">
         <h2>10,000+ of our users love our products.</h2>
         <p>
@@ -23,11 +23,11 @@ const Top = () => {
           <div className="text">Rated 5 Stars in Reviews</div>
         </div>
         <div className="review-2">
-          <div className="star">{Rating(4)}</div>
+          <div className="star">{Rating(5)}</div>
           <div className="text">Rated 5 Stars in Report Guru</div>
         </div>
         <div className="review-3">
-          <div className="star">{Rating(2)}</div>
+          <div className="star">{Rating(5)}</div>
           <div className="text">Rated 5 Stars in BestTech</div>
         </div>
       </div>

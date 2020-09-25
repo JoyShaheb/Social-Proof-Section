@@ -1,6 +1,13 @@
 // I finally solved the background-image source linking problem by moving the images folder to public folder,... 
 //Here is the original post https://stackoverflow.com/questions/59464712/backgroundimage-path-for-css-from-public-folder-not-working-after-build-in-react
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700;800;900&display=swap');
+// ### Primary
+$Very_Dark_Magenta: hsl(300, 43%, 22%);
+$Soft_Pink: hsl(333, 80%, 67%);
+// ### Neutral
+$Dark_Grayish_Magenta: hsl(303, 10%, 53%);
+$Light_Grayish_Magenta: hsl(300, 24%, 96%);
+$White: hsl(0, 0%, 100%);
 *{
   margin: 0px;
   padding: 0px;
@@ -10,20 +17,130 @@
     width:100%;
     min-height: 100vh;
     font-size: 15px;
-    overflow-x: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url('./images/bg-pattern-top-desktop.svg') no-repeat left top, url('./images/bg-pattern-bottom-desktop.svg') no-repeat right bottom;
-    // background-repeat: no-repeat, no-repeat;
-    // background-position: top left, bottom right;
-  }
+    display: grid;
+    place-items:center;
+}
 }
 
 
-
-@media (max-width:375px){
-  body{
-  background: url('./images/bg-pattern-top-mobile.svg') no-repeat left top, url('./images/bg-pattern-bottom-mobile.svg') no-repeat right bottom;
+.top{
+  display: flex;
+  //Change later=======
+  margin-bottom: 100px;
+  .left{
+    color: $Dark_Grayish_Magenta;
+    h2{
+      font-size: 35px;
+      color: $Very_Dark_Magenta;
+    }
   }
+
+
+
+  .right{
+    display: flex;
+    flex-direction: column;
+
+    [class ^='review-']{
+      display: flex;
+      background-color: $Light_Grayish_Magenta;
+      margin-bottom: 12px;
+      width: 55%;
+      padding: 15px;
+      border-radius: 5px;
+      .star{}
+      .text{
+        color: $Very_Dark_Magenta;
+        font-weight: 700;
+      }
+    }
+  }
+}
+.bottom{}
+
+
+
+
+
+// change media query later. now doing testing..
+@media (min-width:700px){
+body{
+  background: url('./images/bg-pattern-top-desktop.svg') no-repeat left top, url('./images/bg-pattern-bottom-desktop.svg') no-repeat right bottom;
+  padding: 90px;
+} 
+.top{
+  flex-direction: row;
+
+  .left{
+    width: 30%;
+    
+  }
+
+
+
+  .right{
+    align-items: flex-end;
+    width: 70%;
+
+
+    [class ^='review-']{
+      flex-direction: row;
+      .star{}
+      .text{
+        margin: 0 10px;
+      }
+    }
+    .review-1{
+      margin-right: 70px;
+    }
+    .review-2{
+      margin-right: 35px;
+    }
+  }
+}
+.bottom{}
+
+}
+
+
+@media (max-width:699px){
+body{
+  background: url('./images/bg-pattern-top-mobile.svg') no-repeat left top, url('./images/bg-pattern-bottom-mobile.svg') no-repeat right bottom;
+  padding: 60px 20px;
+}
+.top{
+  flex-direction: column;
+
+  .left{
+    text-align: center;
+    h2{
+      font-size: 27px;
+      font-weight: 700;
+    }
+    p{
+      margin: 30px 0;
+    }
+  }
+
+
+
+
+  .right{
+    align-items: center;
+
+
+    [class ^='review-']{
+
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      .star{}
+      .text{
+      text-align: center;
+      }
+    }
+  }
+}
+.bottom{}
+
 }
