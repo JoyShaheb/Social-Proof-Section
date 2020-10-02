@@ -100,7 +100,7 @@ $White: hsl(0, 0%, 100%);
 // change media query later. now doing testing..
 @media (min-width:823px){
 body{
-  background: url('./assets/bg-pattern-top-desktop.svg') no-repeat left top, url('./assets/bg-pattern-bottom-desktop.svg') no-repeat right bottom;
+  background: url('./components/assets/bg-pattern-top-desktop.svg') no-repeat left top, url('./components/assets/bg-pattern-bottom-desktop.svg') no-repeat right bottom;
   padding: 90px;
 } 
 .top{
@@ -156,7 +156,7 @@ body{
 
 @media (max-width:822px){
 body{
-  background: url('./assets/bg-pattern-top-mobile.svg') no-repeat left top, url('./assets/bg-pattern-bottom-mobile.svg') no-repeat right bottom;
+  background: url('./components/assets/bg-pattern-top-mobile.svg') no-repeat left top, url('./components/assets/bg-pattern-bottom-mobile.svg') no-repeat right bottom;
   padding: 60px 20px;
 }
 .top{
