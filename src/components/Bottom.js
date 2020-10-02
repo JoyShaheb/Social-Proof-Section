@@ -8,7 +8,7 @@ const Bottom = () => {
       <div className="CARD-1">
         <div className="card-block">
           <div className="card-img">
-            <img src={colton} alt="" />
+            <img src="../assets/image-colton.jpg" alt="" />
           </div>
           <div className="card-info">
             <p className="card-name">Colton Smith</p>
