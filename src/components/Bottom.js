@@ -1,7 +1,7 @@
 import React from "react";
-import anne from "../../public/images/image-anne.jpg";
-import colton from "../../public/images/image-colton.jpg";
-import irene from "../../public/images/image-irene.jpg";
+import anne from "../assets/image-anne.jpg";
+import colton from "../assets/image-colton.jpg";
+import irene from "../assets/image-irene.jpg";
 const Bottom = () => {
   return (
     <div className="bottom">
