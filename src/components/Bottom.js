@@ -1,14 +1,14 @@
 import React from "react";
-import anne from "../assets/image-anne.jpg";
-import colton from "../assets/image-colton.jpg";
-import irene from "../assets/image-irene.jpg";
+import anne from "./assets/image-anne.jpg";
+import colton from "./assets/image-colton.jpg";
+import irene from "./assets/image-irene.jpg";
 const Bottom = () => {
   return (
     <div className="bottom">
       <div className="CARD-1">
         <div className="card-block">
           <div className="card-img">
-            <img src="../assets/image-colton.jpg" alt="" />
+            <img src={colton} alt="" />
           </div>
           <div className="card-info">
             <p className="card-name">Colton Smith</p>

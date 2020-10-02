@@ -1,5 +1,5 @@
 import React from "react";
-import stars from "../assets/icon-star.svg";
+import stars from "./assets/icon-star.svg";
 const Top = () => {
   const star = stars;
   const Rating = (num) => {
