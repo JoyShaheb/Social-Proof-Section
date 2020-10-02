@@ -156,7 +156,7 @@ body{
 
 @media (max-width:822px){
 body{
-  background: url("./assets/bg-pattern-top-mobile.svg') no-repeat left top, url('./assets/bg-pattern-bottom-mobile.svg") no-repeat right bottom;
+  background: url('./assets/bg-pattern-top-mobile.svg') no-repeat left top, url('./assets/bg-pattern-bottom-mobile.svg') no-repeat right bottom;
   padding: 60px 20px;
 }
 .top{
